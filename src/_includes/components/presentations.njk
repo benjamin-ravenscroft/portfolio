@@ -1,0 +1,16 @@
+<div class="research-container">
+    <h2>Conference Presentations</h2>
+    <hr />
+    {% for presentation in presentations %}
+        <div class="article-container">
+            <h3>{{ presentation.title }}</h3>
+            <p>{{ presentation.authors }}</p>
+            <p><em>{{ presentation.venue }}</em>, ({{ presentation.year }})</p>
+            {% if (presentation.awards | length) > 0 %}
+                {% for award in presentation.awards %}
+                    <p style="color:yellow;">{{ award }}</p>
+                {% endfor %}
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,14 @@
+<div class="research-container">
+    <h2>Teaching Assistant Positions</h2>
+    <hr />
+    {% for school in teachingAssistance %}
+        <div>
+            <h3 style="margin-bottom:5px;">{{ school.school}}</h3>
+            {% for course in school.courses %}
+                <div class="article-container">
+                    <p><em>{{ course.title }}</em>, ({{ course.year }})</p>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
