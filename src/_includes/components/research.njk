@@ -30,3 +30,14 @@
         </div>
     {% endfor %}
 </div>
+
+<div class="research-container">
+    <h2>Inactive Drafts</h2>
+    <hr />
+    {% for draft in inactiveDrafts %}
+        <div class="article-container">
+            <h3><a href="{{ draft.link }}" target="_blank">{{ draft.title }}</a></h3>
+            <p>{{ draft.authors }}</p>
+        </div>
+    {% endfor %}
+</div>
