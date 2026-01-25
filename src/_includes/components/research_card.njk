@@ -1,0 +1,21 @@
+<div style="margin-top: 50px;">
+    <h2>Recent Work</h2>
+    <div class="research-cards-container">
+
+    {% for work in recentWork %}
+
+        <div class="research-card">
+            <header class='color-header' style="background-image: var(--g{{ loop.index % 4 + 1 }});"></header>
+            <div class='text'>
+                <h3>{{ work.title }}</h3>
+                <h4>{{ work.journal }}</h4>
+                <p>
+                    {{ work.short_summary }}
+                </p>
+            </div>
+        </div>
+
+    {% endfor %}
+
+    </div>
+</div>

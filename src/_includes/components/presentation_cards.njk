@@ -1,0 +1,13 @@
+<div class="research-page-container">
+    <h2>Presentations</h2>
+    {% for pres in presentations %}
+        <div class="research-card-big">
+            <div class="color-header" style="background-image: var(--g{{ loop.index % 4 + 1 }});"></div>
+            <div class="text">
+                <h2>{{ pres.title }}</h2>
+                <h3>{{ pres.venue }} ({{ pres.year }})</h3>
+                <h4>{{ pres.authors }}</h4>
+            </div>
+        </div>
+    {% endfor %}
+</div>

@@ -1,3 +1,10 @@
+:root {
+    --g1: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    --g2: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    --g3: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    --g4: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +12,13 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Space Grotesk', sans-serif ;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #1D1E20;
-    color: #DADADB;
+    background-color: #ffffff;
+    color: #000000;
     /* width: 900px; */
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     padding: 0 0;
 }
@@ -25,12 +32,46 @@ body {
 
 a {
     text-decoration: none;
-    color: #DADADB;
+    color: inherit;
 }
 
 li {
-    list-style: none;
+    list-style: inside;
 }
+
+ul ul {
+    margin-left: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
 
 /* Navbar */
 .nav-container {
@@ -38,11 +79,10 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    background-color: #1D1E20;
 }
 
 .nav-container .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -57,7 +97,6 @@ li {
 .nav-container .nav a {
     border-radius: 5px;
     padding: 7.5px;
-    background-color: #471396;
 }
 
 .nav-container .nav a:hover {
@@ -107,7 +146,6 @@ hr {
     justify-content: space-around;
     align-items: center;
     padding: 2rem 0;
-    background-color: #1D1E20;
 }
 
 .footer-container p {
@@ -135,87 +173,126 @@ hr {
 /* Hero */
 
 .hero-container {
-    height: 60vh;
+    height: 250px;
+    background-color: #020204;
+    border-radius: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    padding: 2rem 0;
+    padding: 100px;
+
+    margin-top: 50px;
 }
 
 .hero-container .profile-img {
     max-width: 300px;
     max-height: 300px;
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: 0 auto;
     object-fit: cover;
 }
 
 .hero-container .hero-text {
-    text-align: center;
-    margin: 1rem 0;
-    width: 80%;
+    flex: 1;
+    color: white;
+    padding-right: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    .hero-container .hero-text {
+/* Front page cards */
+
+.research-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.research-card {
+    width: 33.33%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 
+        8px 10px 10px -4px hsl(220deg 40% 30% / 0.2),
+        -8px 10px 10px -4px hsl(220deg 40% 30% / 0.2);
+}
+
+@media only screen and (max-width: 1200px) {
+    .research-cards-container {
+        flex-direction: column;
+        gap: 30px 0;
+    }
+
+    .research-card {
         width: 100%;
+        height: auto;
     }
 }
 
-.hero-container .hero-text h2 {
-    font-size: 2.2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+.research-card .color-header {
+    height: 40px;
+    width: 100%;
+    background-color: #7192FF;
 }
 
-.hero-container .hero-text p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
+.research-card .text{
+    padding: 10px;
 }
 
-.hero-container .social-icons {
+/* Big Research Card for Research Section */
+.research-page-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 0 1rem;
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 30px;
 }
 
-.hero-container .social-icons a {
-    color: #9B9C9D;
-    font-size: 1.5rem;
-    transition: all 0.5s ease-in-out;
+.research-card-big {
+    border-radius: 10px;
+    overflow: hidden;
+    /* border-color: #000000;
+    border-width: 1px;
+    border-style: solid; */
+
+    box-shadow: 
+        8px 10px 10px -4px hsl(220deg 40% 30% / 0.2),
+        -8px 10px 10px -4px hsl(220deg 40% 30% / 0.2);
+
+    margin-top: 20px;
 }
 
-.hero-container .social-icons a:hover {
-    color: #DADADB;
+.research-card-big .color-header {
+    height: 50px;
+    width: 100%;
+    background-color: #7192FF;
+}
+
+.research-card-big .text{
+    padding: 10px;
 }
 
 /* About */
 .about-container {
-    padding: 0 0;
-    margin: 0 auto;
-    width: 80%;
-}
-
-.about-container h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    height: auto;
+    /* background-color: #020204; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 30px;
 }
 
 .about-container .about-text {
     width: 100%;
-}
-
-.about-container .about-text p {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    /* line-height: 1.6; */
 }
 
 @media screen and (max-width: 768px) {
@@ -223,6 +300,44 @@ hr {
     .about-container .about-text {
         width: 100%;
     }
+}
+
+.position-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 30px;
+}
+
+.position-container .img-container {
+    width: 100px;         /* Set the diameter of the circle */
+    height: 100px;        /* Must be the same as width for a perfect circle */
+    border-radius: 50%;   /* Makes the container circular */
+    overflow: hidden;     /* Clips the image to the circle shape */
+    display: flex;        /* Helps in centering the image */
+    justify-content: center; /* Centers image horizontally */
+    align-items: center;  /* Centers image vertically */
+    box-shadow: 
+        6px 0 12px -6px hsl(220deg 40% 30% / 0.2),
+        -6px 0 12px -6px hsl(220deg 40% 30% / 0.2);
+    background-color: white;
+}
+
+.img-container img {
+    /* Set the image's dimensions relative to the container */
+    /* You can use a percentage value smaller than 100% to force it to be smaller than the circle */
+    width: 60%;
+    height: 60%;
+    object-fit: contain; /* Scales the image to fit inside the container without stretching, preserving aspect ratio */
+}
+
+.position-container .position-text-container {
+    margin-left: 50px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #7192FF;
 }
 
 /* Skills */

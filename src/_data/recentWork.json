@@ -1,16 +1,17 @@
 [
     {
+        "title": "Effects of Booking Horizon Reduction on Cancellation Rates",
+        "journal": "MDM: Policy & Practice, 2024",
+        "short_summary": "This work studied how shortening the time window for booking appointments affects last-minute cancellations and no-shows in an outpatient pediatric rehabilitation setting. Using real-world clinic data around a policy change, the paper shows that reducing the booking horizon can meaningfully improve attendance and make scheduling more reliable."
+    },
+    {
         "title": "Reducing Diagnostic Imaging Wait Times: Lessons from a Large-Scale Empirical Analysis",
-        "authors": "B. Ravenscroft, H. Arzani, H. Abouee-Mehrizi",
-        "awards": [
-            "Second Place Winner, Best Student Paper Award, CORS (2024)"
-        ],
+        "journal": "Working Paper, 2024",
         "short_summary": "This work examines how day-to-day scheduling decisions in MRI departments—especially how procedures are sequenced throughout the day—affect scan durations and overall throughput. Using large-scale hospital data, the paper shows that smarter sequencing and workload-aware scheduling can meaningfully increase effective capacity and help reduce diagnostic imaging wait times without adding resources."
     },
     {
-        "title": "The Impact of Waiting Time and Treatment Modality: An Empirical Analysis of a Pediatric Rehabilitation Program",
-        "authors": "B. Ravenscroft, H. Abouee-Mehrizi, B. Wylie-Toal",
-        "awards": [],
+        "title": "The Impact of Treatment Modaity and Waiting Time",
+        "journal": "Working Paper - M.ASc. Thesis, 2024",
         "short_summary": "This work investigates how operational choices in multi-visit outpatient care—like how long patients wait to start treatment and whether visits are delivered in person or via telemedicine—shape both care intensity and appointment attendance. Using pediatric speech-language therapy data, the paper shows how these factors influence how many visits patients ultimately need to reach discharge, highlighting levers to improve efficiency and patient outcomes."
     }
 ]

@@ -1,0 +1,16 @@
+<div class="research-page-container">
+    <h2>Working Papers</h2>
+    {% for article in workingPapers %}
+        <div class="research-card-big">
+            <div class="color-header" style="background-image: var(--g{{ loop.index % 4 + 1 }});"></div>
+            <div class="text">
+                <h2>{{ article.title }}</h2>
+                <h3>{{ article.journal }}</h3>
+                <h4>{{ article.authors }}</h4>
+                <h4 style="color: #FFB107;">{{ article.awards }}</h4>
+                <br>
+                <p>{{ article.short_summary }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
