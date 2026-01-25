@@ -280,6 +280,43 @@ hr {
 }
 
 /* About */
+.about-wrapper {
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px;
+    margin-bottom: 50px;
+
+    box-shadow:
+        8px 10px 10px -4px hsl(220deg 40% 30% / 0.2),
+        -8px 10px 10px -4px hsl(220deg 40% 30% / 0.2);
+}
+
+.about-wrapper .profile-img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+.about-wrapper .color-header {
+    height: 50px;
+    width: 100%;
+    background-color: #7192FF;
+    margin-bottom: 20px;
+}
+
 .about-container {
     height: auto;
     /* background-color: #020204; */
@@ -338,6 +375,9 @@ hr {
     border-radius: 10px;
     padding: 20px;
     background-color: #7192FF;
+    box-shadow:
+        6px 8px 8px -3px hsl(220deg 40% 30% / 0.2),
+        -6px 8px 8px -3px hsl(220deg 40% 30% / 0.2);
 }
 
 /* Skills */
