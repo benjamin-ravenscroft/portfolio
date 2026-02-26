@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget('src/css');
     
     return {
+        pathPrefix: "/portfolio/",
         dir: {
             data: '_data',
             input: 'src',
